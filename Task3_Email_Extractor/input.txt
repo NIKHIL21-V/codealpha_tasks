@@ -1,0 +1,16 @@
+Hello,
+
+Here are the contact details for our project team:
+
+Nikhil: [nikhil@gmail.com](mailto:nikhil@gmail.com)
+Rahul: [rahul123@gmail.com](mailto:rahul123@gmail.com)
+Priya: [priya2025@outlook.com](mailto:priya2025@outlook.com)
+Support: [support@codealpha.tech](mailto:support@codealpha.tech)
+Contact: [info@example.com](mailto:info@example.com)
+
+Additional contacts:
+[nikhil@gmail.com](mailto:nikhil@gmail.com)
+[team@python.org](mailto:team@python.org)
+[developer@gmail.com](mailto:developer@gmail.com)
+
+Thank you!
