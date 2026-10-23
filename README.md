@@ -1,161 +1,117 @@
-# 🎮 Hangman Game in Python
+# 📈 Stock Portfolio Tracker
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)
-![Project](https://img.shields.io/badge/Project-Hangman-green)
-![Internship](https://img.shields.io/badge/Internship-CodeAlpha-orange)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+### CodeAlpha Python Programming Internship — Task 2
 
 ## 📌 Project Overview
 
-The **Hangman Game** is a command-line word-guessing game developed using Python as part of the CodeAlpha Python Programming Internship.
+The Stock Portfolio Tracker is a simple Python application that calculates the total investment value of a stock portfolio using predefined stock prices.
 
-The program randomly selects a secret word from a predefined list. The player must guess the hidden word by entering one letter at a time. The game provides feedback for each guess and ends when the player successfully guesses the word or reaches the maximum number of incorrect guesses.
+Users can view available stocks, add stocks to their portfolios, calculate investment values, and save portfolio details to a CSV file.
 
 ## ✨ Features
 
-* 🎲 **Random Word Selection:** Selects a secret word randomly from a predefined list.
-* 🔤 **Hidden Word Display:** Displays unguessed letters as underscores.
-* ✅ **Correct Guess Detection:** Reveals correctly guessed letters.
-* ❌ **Incorrect Guess Tracking:** Tracks incorrect guesses.
-* 🔁 **Duplicate Guess Prevention:** Prevents letters from being guessed repeatedly.
-* 🛡️ **Input Validation:** Rejects invalid inputs, including numbers and multiple characters.
-* 🏆 **Win Condition:** Announces success when the player guesses the entire word.
-* 💀 **Game-Over Condition:** Ends the game after six incorrect guesses and reveals the secret word.
+* 📊 View available stocks and their prices.
+* ➕ Add stocks and specify quantities.
+* 💰 Calculate investment values automatically.
+* 📋 View portfolio details.
+* 🧮 Calculate the total investment value.
+* 💾 Export portfolio details to a CSV file.
+* ⚠️ Handle empty portfolios when viewing or saving data.
 
 ## 🛠️ Technologies Used
 
-* **Programming Language:** Python 3
-* **Module:** Python `random` module
-* **Code Editor:** Visual Studio Code
-* **Terminal:** PowerShell
-
-## 📂 Project Structure
-
-```text
-CodeAlpha_Hangman_Game/
-│
-├── hangman.py
-└── README.md
-```
-
-## ⚙️ Requirements
-
-* Python 3 installed on your computer.
-* A terminal or command prompt.
-* Visual Studio Code or another Python-compatible editor (optional).
-
-No external Python packages are required.
-
-## 🚀 Installation and Execution
-
-### Step 1: Clone the Repository
-
-Open a terminal and run:
-
-```bash
-git clone https://github.com/NIKHIL21-V/CodeAlpha_Hangman_Game.git
-```
-
-### Step 2: Navigate to the Project Folder
-
-```bash
-cd CodeAlpha_Hangman_Game
-```
-
-### Step 3: Run the Game
-
-```bash
-python hangman.py
-```
-
-If your system uses the `python3` command, run:
-
-```bash
-python3 hangman.py
-```
-
-### Step 4: Play the Game
-
-1. The program displays a hidden word.
-2. Enter one letter when prompted.
-3. The game reveals correctly guessed letters.
-4. Incorrect guesses increase the error count.
-5. You win by guessing all the letters before reaching six incorrect guesses.
-
-## 🎯 Example Gameplay
-
-```text
-===== WELCOME TO HANGMAN =====
-Guess the hidden word one letter at a time!
-You have 6 incorrect guesses.
-
-Word: _ _ _ _ _ _
-Incorrect guesses: 0 / 6
-Enter a letter: o
-Correct guess!
-
-Word: _ o _ _ _ _
-Incorrect guesses: 0 / 6
-Enter a letter: p
-Wrong guess!
-```
-
-*Note: The secret word and gameplay output vary because the program selects a word randomly.*
-
-## 🧠 Concepts Demonstrated
-
-This project demonstrates the practical application of fundamental Python programming concepts:
-
-* Variables and data types
-* Lists
-* Random selection
-* `while` loops and `for` loops
-* Conditional statements (`if`, `else`)
+* Python 3
+* Dictionaries
+* Loops and conditional statements
 * User input and output
-* String manipulation
-* Input validation
-* Membership testing
-* Game logic and control flow
+* Basic arithmetic operations
+* CSV file handling
 
-## 📚 Learning Outcomes
+## 💵 Example Stock Prices
+
+| Stock Symbol | Price per Share |
+| ------------ | --------------: |
+| AAPL         |            $180 |
+| TSLA         |            $250 |
+
+*Note: These are predefined example prices, not live market prices.*
+
+## 🚀 How to Run
+
+### Step 1: Install Python
+
+Install Python 3 if it is not already installed.
+
+### Step 2: Download the Project
+
+Download or clone this repository to your computer.
+
+### Step 3: Open the Project Folder
+
+Open a terminal or PowerShell window inside the project folder.
+
+### Step 4: Run the Application
+
+Execute the following command:
+
+```bash
+python stock_tracker.py
+```
+
+### Step 5: Use the Menu
+
+Choose an option from the application menu:
+
+1. View Available Stocks
+2. Add Stock to Portfolio
+3. View Portfolio
+4. Save Portfolio to CSV
+5. Exit
+
+Follow the on-screen instructions to manage your portfolio.
+
+## 📊 Sample Calculation
+
+Suppose the portfolio contains:
+
+| Stock     | Quantity | Price | Investment Value |
+| --------- | -------: | ----: | ---------------: |
+| TSLA      |       10 |  $250 |           $2,500 |
+| AAPL      |       10 |  $180 |           $1,800 |
+| **Total** |          |       |       **$4,300** |
+
+The application calculates the investment value using:
+
+**Investment Value = Quantity × Price per Share**
+
+**Total Investment = Sum of All Investment Values**
+
+## 📁 Project Structure
+
+```text
+CodeAlpha_Stock_Portfolio_Tracker/
+│
+├── stock_tracker.py
+├── README.md
+└── portfolio.csv
+```
+
+*The CSV file is generated when portfolio data is saved. Your project may contain additional files depending on your implementation.*
+
+## 🎯 Learning Outcomes
 
 Through this project, I practiced:
 
-* Developing an interactive Python application.
-* Implementing logical conditions and loops.
-* Handling user input and invalid entries.
-* Tracking game state and user progress.
-* Organizing a simple software project.
-* Using Git and GitHub for version control and project sharing.
+* Working with Python dictionaries.
+* Accepting and processing user input.
+* Performing arithmetic calculations.
+* Using loops and conditional statements.
+* Organizing portfolio data.
+* Exporting data to CSV files.
 
-## 🔮 Future Improvements
-
-Potential enhancements include:
-
-* Adding difficulty levels.
-* Introducing hints for difficult words.
-* Displaying visual stages of the hangman.
-* Organizing words into different categories.
-* Tracking scores and consecutive wins.
-* Creating a graphical user interface.
-* Adding automated tests.
-
-## 👨‍💻 Internship Information
+## 👨‍💻 Internship Project
 
 **Program:** CodeAlpha Python Programming Internship
-**Project:** Task 1 — Hangman Game
-**Domain:** Python Programming
+**Task:** Task 2 — Stock Portfolio Tracker
 
-## 👤 Author
-
-**NIKHIL21-V**
-
-GitHub: [NIKHIL21-V](https://github.com/NIKHIL21-V)
-
-## 📄 License
-
-This project is available for educational and portfolio purposes. A formal open-source license can be added if the project is intended for redistribution.
-
----
-
-⭐ If you find this project interesting, feel free to explore the repository and its source code.
+This project was developed as part of my Python programming internship to strengthen my programming fundamentals and practical problem-solving skills.
